@@ -8,14 +8,14 @@ H_struct作为 Query
 H_seq作为 Key/Value
 用结构特征去查询、融合序列特征
 # 2026.3.16版本解说
-##1.
+## 1.
 数据切分: 训练集 10619 条，验证集 1327 条，测试集 1328 条
 训练200个epoch，设置早停
 训练过程写入training_log.txt文档
 模型保存为best_antibody_model2.pt
 其余设置与上面一样
 tmux attach -t antibody_lab
-##2.
+## 2.
 H_struct作为 Key/Value
 H_seq作为 Query
 模型保存为best_antibody_model3.pt
