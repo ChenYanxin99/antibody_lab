@@ -25,10 +25,14 @@ H_seq作为 Key/Value
 
 模型保存为best_antibody_model2.pt
 
-其余设置与上面一样
+其余设置与2026.3.11版本一样
 
 tmux attach -t antibody_lab
 
+📊 === 最终对比实验结果总结 ===
+ - 仅序列 (Seq-Only): 0.8613
+ - 仅结构 (Struct-Only / 逆折叠): 0.3605
+ - 协同设计 (Seq + Struct): 0.2918
 ## 2.
 H_struct作为 Key/Value
 
@@ -38,10 +42,14 @@ H_seq作为 Query
 
 训练过程写入training_log2.txt文档
 
-其余设置与1一样
+其余设置与2026.3.16版本一样
 
 tmux attach -t antibody_lab2
 
+📊 === 最终对比实验结果总结 ===
+ - 仅序列 (Seq-Only): 0.4760
+ - 仅结构 (Struct-Only / 逆折叠): 2.0040
+ - 协同设计 (Seq + Struct): 0.4752
 ## 3.
 序列编码器更改为随机初始化的 12M 标准 Transformer，从头开始训练
 
@@ -49,7 +57,11 @@ tmux attach -t antibody_lab2
 
 模型保存为best_antibody_model4.pt
 
-其余设置与1一样
+其余设置与2026.3.16版本一样
 
 tmux attach -t antibody_lab3
 
+📊 === 最终对比实验结果总结 ===
+ - 仅序列 (Seq-Only): 2.1022
+ - 仅结构 (Struct-Only / 逆折叠): 0.3516
+ - 协同设计 (Seq + Struct): 0.3477
